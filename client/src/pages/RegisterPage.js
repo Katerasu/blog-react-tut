@@ -17,27 +17,17 @@ export default function RegisterPage() {
         }
     }
     return (
-        <
-// @ts-ignore
-        form className="register" onSubmit={register}>
-            <
-// @ts-ignore
-            h1>Register</h1>
-            <
-// @ts-ignore
-            input type="text" 
+        <form className="register" onSubmit={register}>
+            <h1>Register</h1>
+            <input type="text" 
                 placeholder="username" 
                 value={username} 
                 onChange={ev => setUsername(ev.target.value)} />
-            <
-// @ts-ignore
-            input type="password" 
+            <input type="password" 
                 placeholder="password"
                 value={password}
                 onChange={ev => setPassword(ev.target.value)} />
-            <
-// @ts-ignore
-            button>Register</button>
+            <button>Register</button>
         </form>
     );
 }

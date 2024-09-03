@@ -52,8 +52,8 @@ export default function CreatePost () {
 
     return (
         <form onSubmit={createNewPost}>
-            <input type="title" placeholder={title} onChange={ev => setTitle(ev.target.value)}/>
-            <input type="summary" placeholder={summary} onChange={ev => setSummary(ev.target.value)}/>
+            <input type="title" placeholder={'Title'} onChange={ev => setTitle(ev.target.value)}/>
+            <input type="summary" placeholder={'Summary'} onChange={ev => setSummary(ev.target.value)}/>
             <input type="file"  onChange={ev => setFiles(
 // @ts-ignore
             ev.target.files)}/>
